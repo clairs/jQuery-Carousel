@@ -1,0 +1,23 @@
+jQuery Carousel - v1.0
+----------------------
+
+Requires: jQuery 1.4+
+
+A slideshow. Currently only fades between items, for 10 seconds each (interval between items and transition effect will be implemented if there's demand for it)
+
+To use:
+In HTML, the slideshow must be in an unordered list with class 'carousel', with each item inside a list item, eg:
+<ul class="carousel">
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ul>
+
+
+(You can put almost anything inside the items as long as it's legal html (such as linked images), and you can give any element an extra class or id if you desire
+
+To start the slideshow, use:
+$(document).carousel();
+
+
+This module will probably cause the browser to scroll up or down a bit, because for a split second there's no content in the container. To fix this, you need to give it a height using CSS. TODO: fix this in the javascript itself
