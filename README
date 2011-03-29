@@ -1,5 +1,5 @@
-jQuery Carousel - v1.0
-----------------------
+jQuery Carousel - v1.0.1
+------------------------
 
 Requires: jQuery 1.4+
 
@@ -18,6 +18,3 @@ In HTML, the slideshow must be in an unordered list with class 'carousel', with 
 
 To start the slideshow, use:
 $(document).carousel();
-
-
-This module will probably cause the browser to scroll up or down a bit, because for a split second there's no content in the container. To fix this, you need to give it a height using CSS. TODO: fix this in the javascript itself

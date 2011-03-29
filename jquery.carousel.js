@@ -11,6 +11,15 @@ $.fn.carousel = function(){
             });
         };
 
+	$(window).load(function(){
+            //Get tallest item, so that we can set the parent to be this
+            var tallest = 0;
+            $('.carousel li').each(function(){
+                if ($(this).height() > tallest){tallest = $(this).height();}
+            });
+            $('.carousel').css('height', tallest);
+        });
+
         $('.carousel li').css('list-style-type','none');
         $('.carousel li').css('margin','0');
         $('.carousel li').css('padding','0');
